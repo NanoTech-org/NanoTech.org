@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NanoTech - Explore More</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:url("back.png") center center/cover no-repeat fixed;
+    padding:50px;
+}
+
+.card{
+    background:rgba(0,0,0,0.45);
+    backdrop-filter:blur(15px);
+    -webkit-backdrop-filter:blur(15px);
+    border-radius:20px;
+    padding:30px;
+    margin-bottom:40px;
+    border:1px solid rgba(255,255,255,0.1);
+    box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
+
+h1{
+    color:skyblue;
+    margin-bottom:15px;
+}
+
+p{
+    color:white;
+    font-size:18px;
+    line-height:1.7;
+    margin-bottom:20px;
+}
+
+button{
+    padding:15px 40px;
+    border:none;
+    border-radius:50px;
+    background:#00b7ff;
+    color:white;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#008cff;
+    transform:translateY(-3px);
+    box-shadow:0 0 25px rgba(0,183,255,.5);
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>NanoBox</h1>
+
+<p>
+This is a gaming platform by NanoTech.
+Here we launch new games every 2 months,
+absolutely free for everyone.
+</p>
+
+<button onclick="window.location.href='game.html'">
+NanoBox
+</button>
+
+</div>
+
+<div class="card">
+
+<h1>NanoTech Soft Services</h1>
+
+<p>
+<b>SecurityX</b> is a cybersecurity AI assistant that helps you stay safe online.
+It includes a free file scanner where you can upload files and detect suspicious or malicious content.
+</p>
+
+<button onclick="window.location.href='https://install-securityx-ai.netlify.app'">
+SecurityX
+</button>
+
+</div>
+
+<div class="card">
+    <h1>NanoTech Web Services</h1>
+    <p><b>NanoCode</b> is website which teaches python programming with a test and certificate for free.</p>
+    <button onclick="window.location.href='https://nanocode-wvmp.onrender.com'">
+        NanoCode
+    </button>
+</div>
+
+</body>
+</html>

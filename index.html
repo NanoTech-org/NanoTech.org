@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NanoTech | Turning Tomorrow Today</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    height:100vh;
+    background:url("back.png") center center/cover no-repeat fixed;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+
+/* Dark Overlay */
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.35);
+    z-index:0;
+}
+
+/* Title */
+.logo{
+    position:relative;
+    z-index:1;
+    color:skyblue;
+    font-size:60px;
+    margin-bottom:8px;
+}
+
+/* Tagline */
+.tagline{
+    position:relative;
+    z-index:1;
+    color:white;
+    font-size:20px;
+    font-style:italic;
+    margin-bottom:30px;
+}
+
+/* Glass Card */
+.intro1{
+    position:relative;
+    z-index:1;
+    width:700px;
+    padding:45px;
+    background:rgba(15,15,15,.25);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:25px;
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.45),
+        0 0 50px rgba(0,132,255,.20);
+    text-align:center;
+    animation:fadeIn 1.2s ease;
+}
+
+.about{
+    color:#7ad8ff;
+    font-size:34px;
+    margin-bottom:20px;
+}
+
+.desc{
+    color:white;
+    line-height:1.8;
+    font-size:18px;
+    margin-bottom:35px;
+}
+
+button{
+    padding:15px 40px;
+    border:none;
+    border-radius:50px;
+    background:#00b7ff;
+    color:white;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#008cff;
+    transform:translateY(-4px);
+    box-shadow:0 0 30px rgba(0,183,255,.45);
+}
+
+/* Footer */
+footer{
+    position:fixed;
+    bottom:15px;
+    width:100%;
+    text-align:center;
+    color:white;
+    z-index:1;
+    font-size:14px;
+}
+
+footer a{
+    color:skyblue;
+    text-decoration:none;
+}
+
+footer a:hover{
+    text-decoration:underline;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+</style>
+
+</head>
+<body>
+
+<h1 class="logo">NanoTech</h1>
+
+<p class="tagline">Turning Tomorrow Today</p>
+
+<div class="intro1">
+
+    <h2 class="about">About Us</h2>
+
+    <p class="desc">
+        NanoTech is a technology startup founded by
+        <b>Aditya Singh</b> and co-founded by
+        <b>Shashikant Ahirwar</b>.
+        We create modern software, AI chatbots, games,
+        web applications, and innovative digital solutions
+        that help turn tomorrow into today.
+    </p>
+
+    <button onclick="window.location.href='explore.html'">
+        Explore
+    </button>
+
+</div>
+
+<footer>
+    <p>© 2026 NanoTech. All Rights Reserved.</p>
+    <p>
+        For support, email us at
+        <a href="mailto:nanotech54321@gmail.com">
+            nanotech54321@gmail.com
+        </a>
+    </p>
+</footer>
+
+</body>
+</html>
